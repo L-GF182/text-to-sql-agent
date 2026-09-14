@@ -1,0 +1,50 @@
+# ===== Python 虚拟环境 =====
+venv/
+env/
+ENV/
+.venv/
+
+# ===== 环境变量（含 API 密钥，绝对不能提交） =====
+.env
+.env.*
+!.env.example
+
+# ===== Python 缓存 =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ===== 本地数据库与向量库 =====
+chroma_db/
+checkpoints.db
+checkpoints.db-shm
+checkpoints.db-wal
+
+# ===== 图表输出（若后续做数据可视化） =====
+charts/
+*.png
+*.jpg
+*.jpeg
+
+# ===== 日志文件 =====
+*.log
+logs/
+
+# ===== IDE 配置 =====
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+
+# ===== Jupyter Notebook（可能用不到） =====
+.ipynb_checkpoints/
