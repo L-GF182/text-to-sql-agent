@@ -3,6 +3,15 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from sql_agent_with_retry import run_agent_with_retry # 导入之前创建的 agent
 
+import os
+
+# 首次启动时自动初始化向量库
+if not os.path.exists("./chroma_db"):
+    print("🔄 首次启动，正在初始化向量库（需要下载嵌入模型，约400MB）...")
+    from schema_rag import init_vector_store
+    init_vector_store()
+    print("✅ 向量库初始化完成")
+
 app = FastAPI(title="Text-to-SQL Agent API")
 
 class QueryRequest(BaseModel):
