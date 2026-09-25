@@ -13,3 +13,4 @@ python-dotenv
 sqlparse
 sentence-transformers
 torch
+gradio
