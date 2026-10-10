@@ -15,7 +15,7 @@
 ## 🛠 技术栈
 
 - **语言**：Python 3.12
-- **大模型**：通义千问（qwen3-max-2026-01-23）
+- **大模型**：通义千问（qwen3.8-flash）
 - **Agent 框架**：LangChain、LangGraph
 - **Web 框架**：FastAPI、Uvicorn
 - **数据库**：SQLite（Chinook 示例库）
