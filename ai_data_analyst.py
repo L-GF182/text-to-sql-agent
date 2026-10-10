@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 # 初始化 LLM 和数据库
 llm = ChatOpenAI(
     temperature=0.1,
-    model="qwen3-max-2026-01-23",
+    model="qwen3.8-flash",
     openai_api_key=os.getenv("OPENAI_API_KEY"),
     openai_api_base=os.getenv("OPENAI_BASE_URL"),
 )
